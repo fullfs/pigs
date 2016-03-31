@@ -1,0 +1,125 @@
+doctype html
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+html 
+    <!--<![endif]-->
+    head
+        include ./includes/head.jade
+
+    body
+        .wrapper
+            header.header
+                nav.menu
+                    ul.menu__list
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                span.menu__text Гостевая
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                span.menu__text Мясо и Субпродукты
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                span.menu__text Полуфабрикаты
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                span.menu__text Контакты
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                span.menu__text Новости
+                                        
+                                        
+                section.header-slider
+                    ul.header-slider__list
+                        li.header-slider__item(
+                            style="background-image: url(images/slide1.jpg)"
+                        )
+                        li.header-slider__item(
+                            style="background-image: url(images/slide2.jpg)"
+                        )
+                            
+                section.header-slider-content
+                    .header-slider-content__inner
+                        .header-slider-content__box
+                            ul.header-slider-content__box-list
+                                li.header-slider-content__box-item._active
+                                    h3.header-slider-content__title Современная техника
+                                    p.header-slider-content__text
+                                        | Современная экологчиная техника и оборудование, 
+                                        | соответствующее всем ГОСТ и СНИМ нормативам.
+                                li.header-slider-content__box-item
+                                    h3.header-slider-content__title Белые утки
+                                    p.header-slider-content__text
+                                        | Современная экологчиная техника и оборудование, 
+                                        | соответствующее всем ГОСТ и СНИМ нормативам.
+                            .header-slider-content__nav
+                                button.header-slider-content__nav-btn._active(type="button")
+                                button.header-slider-content__nav-btn(type="button")
+            
+            
+            section.content
+                .content__inner
+                    .content__substrate
+                    .content__content
+                        .content__tab
+                            span.content__tab-text О нас
+                            
+                        h1.content__title Корниловский свинокомплекс
+                        
+                        section.feed
+                            article.feed__item
+                                figure.feed__img-h
+                                    a.feed__img-link(href="#")
+                                        img.feed__img(src="images/pic.jpg" alt="")
+                                        
+                                .feed__content._bg-0
+                                    h2.feed__title Комплекс был построен в 2011 году
+                                    p.feed__text 
+                                        | При планировании и проектировании комплекса были учтены все тонкости
+                                        | и подробности разведения свинок - свежный воздух, плодородные почвы,
+                                        | естественные водоёмы и имногое другое.
+                                    
+                            article.feed__item
+                                figure.feed__img-h
+                                    a.feed__img-link(href="#")
+                                        img.feed__img(src="images/pic.jpg" alt="")    
+                                .feed__content._bg-1
+                                    h2.feed__title Делаем упор на натуральном и полезном
+                                    p.feed__text 
+                                        | При планировании и проектировании комплекса были учтены все тонкости
+                                        | и подробности разведения свинок - свежный воздух, плодородные почвы,
+                                        | естественные водоёмы и имногое другое.
+
+                            article.feed__item
+                                figure.feed__img-h
+                                    a.feed__img-link(href="#")
+                                        img.feed__img(src="images/pic.jpg" alt="")    
+                                .feed__content._bg-2
+                                    h2.feed__title Современное оборудование
+                                    p.feed__text 
+                                        | При планировании и проектировании комплекса были учтены все тонкости
+                                        | и подробности разведения свинок - свежный воздух, плодородные почвы,
+                                        | естественные водоёмы и имногое другое.
+        
+                            article.feed__item
+                                figure.feed__img-h
+                                    a.feed__img-link(href="#")
+                                        img.feed__img(src="images/pic.jpg" alt="")    
+                                .feed__content._bg-3
+                                    h2.feed__title Всё ради получения лучших результатов
+                                    p.feed__text 
+                                        | При планировании и проектировании комплекса были учтены все тонкости
+                                        | и подробности разведения свинок - свежный воздух, плодородные почвы,
+                                        | естественные водоёмы и имногое другое.
+        
+                            article.feed__item
+                                figure.feed__img-h
+                                    a.feed__img-link(href="#")
+                                        img.feed__img(src="images/pic.jpg" alt="")    
+                                .feed__content._bg-4
+                                    h2.feed__title Мы ещё и племенное хозяйство
+                                    p.feed__text 
+                                        | При планировании и проектировании комплекса были учтены все тонкости
+                                        | и подробности разведения свинок - свежный воздух, плодородные почвы,
+                                        | естественные водоёмы и имногое другое.
+        footer.footer

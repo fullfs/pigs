@@ -1,0 +1,44 @@
+@mixin content() {
+	max-width: 1210px;
+	min-width: 1210px;
+	// min-width: 1130px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+$ff-regular: 'Open Sans', Arial, sans-serif;
+$ff-title: 'PFSquareSansPro', Arial, Verdana, Helvetica, sans-serif;
+$ff-title-s: 'MyriadPro', Tahoma, sans-serif;
+$ff-title-f: 'HeliosCond', Tahoma, sans-serif;
+
+$bp-s: 1220px;
+
+@import "mixins";
+// @import "fonts";
+@import "base";
+
+.wrapper {
+	// @include content-h;
+	padding-bottom: 80px;
+	min-height: 5000px;
+	overflow: hidden;
+}
+
+@import "header";
+@import "menu";
+@import "content";
+@import "feed";
+@import "rewards";
+@import "footer";
+
+// .content {
+// 	@include cf;
+//
+// 	&:hover {
+//
+// 	}
+//
+// 	&._active {
+//
+// 	}
+// }
